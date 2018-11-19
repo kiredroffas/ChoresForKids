@@ -1,0 +1,44 @@
+
+.bg-image {
+  width: 100%;
+}
+
+hr {
+  color: white;
+}
+.header-pad {
+  padding-top: 20px;
+}
+
+.p-text {
+  font-family: "Comic Sans MS";
+  font-size: 26px;
+  color: white;
+}
+
+.clipboard {
+  width: 60%;
+}
+
+.coloring-book {
+  width: 90%;
+}
+
+.l-text {
+  font-size: 16px;
+  color: white;
+}
+
+.r-text {
+  font-size: 16px;
+  color: white;
+  margin-left:250px;
+}
+
+.c-text {
+  font-size: 18px;
+  color: white;
+}
+
+
+
