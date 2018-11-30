@@ -3,4 +3,4 @@ Chores For Kids: This product will help kids manage their chores through the cre
 
 Legacy Team Members: Erik Safford, Muhannad Qaisi, Harpreet Singh
 
-Current Status: Design phase
+Current Status: Development phase
