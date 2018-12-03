@@ -8,10 +8,13 @@ body {
 
 .footer-block {
   background-color: #292929;
-  height: 440px;
+  height: 150px;
   color: #F0F0F0;
 }
 
 .login-link-text {
   color: white !important;
+}
+.tnr {
+  font-family: "Times New Roman", Times, serif;
 }
