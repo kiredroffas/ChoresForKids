@@ -6,4 +6,12 @@ body {
   background-color: black;
 }
 
+.footer-block {
+  background-color: #292929;
+  height: 440px;
+  color: #F0F0F0;
+}
 
+.login-link-text {
+  color: white !important;
+}

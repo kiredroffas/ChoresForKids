@@ -5,7 +5,7 @@
     {{#if currentUser}}
       {{else}}
       <h1><center>Create an account/login to view, create, and edit a chore list; and view rewards!</center></h1>
-      <br>
+      <br><br>
     {{/if}}
 
     <div class="ui three column grid">
@@ -13,7 +13,7 @@
       <div class="column">
         {{#if currentUser}}
           <div class="ui segment">
-            <a href="">
+            <a class="{{ isActiveRoute 'List_Stuff_Page'}} item" href="{{ pathFor 'List_Stuff_Page' }}">
               <p class="p-text"><b><center>Click to Create a Chore List!</center></b></p>
               <img class="ui float image" src="/images/clipboard.png">
             </a>
@@ -28,7 +28,7 @@
       <div class="column">
         {{#if currentUser}}
           <div class="ui segment">
-            <a href="">
+            <a class="{{ isActiveRoute 'Rewards_Page'}} item" href="{{ pathFor 'Rewards_Page' }}">
               <p class="p-text"><b><center>Click to Redeem your Chore Coins for Rewards!</center></b></p>
               <br>
               <img class="ui image" src="/images/colorbookw.jpg">

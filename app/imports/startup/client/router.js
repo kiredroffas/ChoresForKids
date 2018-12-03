@@ -15,6 +15,13 @@ FlowRouter.route('/list', {
   },
 });
 
+FlowRouter.route('/rewards', {
+  name: 'Rewards_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Rewards_Page' });
+  },
+});
+
 FlowRouter.route('/add', {
   name: 'Add_Stuff_Page',
   action() {
