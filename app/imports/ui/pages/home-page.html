@@ -1,17 +1,24 @@
 <template name="Home_Page">
   <div class="ui text container">
-
     <br><br>
+
+    {{#if currentUser}}
+      {{else}}
+      <h1><center>Create an account/login to view, create, and edit a chore list; and view rewards!</center></h1>
+      <br>
+    {{/if}}
 
     <div class="ui three column grid">
 
       <div class="column">
-        <div class="ui segment">
-          <a href="">
-            <p class="p-text"><b><center>Click to Create a Chore List!</center></b></p>
-            <img class="ui float image" src="/images/clipboard.png">
-          </a>
-        </div>
+        {{#if currentUser}}
+          <div class="ui segment">
+            <a href="">
+              <p class="p-text"><b><center>Click to Create a Chore List!</center></b></p>
+              <img class="ui float image" src="/images/clipboard.png">
+            </a>
+          </div>
+        {{/if}}
       </div>
 
       <div class="column">
@@ -19,16 +26,19 @@
       </div>
 
       <div class="column">
-        <div class="ui segment">
-          <a href="">
-            <p class="p-text"><b><center>Click to Redeem your Chore Coins for Rewards!</center></b></p>
-            <br>
-            <img class="ui image" src="/images/colorbookw.jpg">
-          </a>
-          <br><br>
-        </div>
+        {{#if currentUser}}
+          <div class="ui segment">
+            <a href="">
+              <p class="p-text"><b><center>Click to Redeem your Chore Coins for Rewards!</center></b></p>
+              <br>
+              <img class="ui image" src="/images/colorbookw.jpg">
+            </a>
+            <br><br>
+          </div>
+        {{/if}}
       </div>
     </div>
+
     <br><br>
 
   </div>
