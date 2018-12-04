@@ -7,7 +7,7 @@
   <div class="ui text container">
     {{#if currentUser}}
       {{else}}
-      <h1><center>Create an account/login to view, create, and edit a chore list; and view rewards!</center></h1>
+      <h1><center>Create an account/login to view, create, edit a chore list, and view rewards!</center></h1>
       <br>
     {{/if}}
 
@@ -15,29 +15,30 @@
 
       <div class="column">
         {{#if currentUser}}
-          <div class="ui segment">
-            <a class="{{ isActiveRoute 'List_Stuff_Page'}} item" href="{{ pathFor 'List_Stuff_Page' }}">
+          <a class="{{ isActiveRoute 'List_Stuff_Page'}} item" href="{{ pathFor 'List_Stuff_Page' }}">
+            <div class="ui segment">
               <p class="p-text"><b><center>Click to Create a Chore List!</center></b></p>
               <img class="ui float image" src="/images/clipboard.png">
-            </a>
-          </div>
+            </div>
+          </a>
         {{/if}}
       </div>
 
       <div class="column">
+        <br>
         <img class="ui float image" src="/images/whitekids.jpg">
       </div>
 
       <div class="column">
         {{#if currentUser}}
-          <div class="ui segment">
-            <a class="{{ isActiveRoute 'Rewards_Page'}} item" href="{{ pathFor 'Rewards_Page' }}">
+          <a class="{{ isActiveRoute 'Rewards_Page'}} item" href="{{ pathFor 'Rewards_Page' }}">
+            <div class="ui segment">
               <p class="p-text"><b><center>Click to Redeem your Chore Coins for Rewards!</center></b></p>
               <br>
               <img class="ui image" src="/images/colorbookw.jpg">
-            </a>
             <br><br>
-          </div>
+            </div>
+          </a>
         {{/if}}
       </div>
     </div>
