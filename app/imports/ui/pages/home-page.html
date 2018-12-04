@@ -1,14 +1,11 @@
 <template name="Home_Page">
-  <h1 class="tnr" style="font-size:24px;"><center>It is not what <i>you do</i> for your children,<br/>
-    but what you have taught them to <i>do themselves</i> that will make them successful human beings. <br/>
-    -Ann Landers</center></h1>
+  <center><img class="ui float image" src="/images/welcome.png" style="width:80%;"></center>
   <hr>
 
   <div class="ui text container">
     {{#if currentUser}}
       {{else}}
-      <h1><center>Create an account/login to view, create, edit a chore list, and view rewards!</center></h1>
-      <br>
+      <p><center>Create an account/login to view, create, edit a chore list, and view rewards!</center></p>
     {{/if}}
 
     <div class="ui three column grid">
@@ -36,14 +33,17 @@
               <p class="p-text"><b><center>Click to Redeem your Chore Coins for Rewards!</center></b></p>
               <br>
               <img class="ui image" src="/images/colorbookw.jpg">
-            <br><br>
+            <br>
             </div>
           </a>
         {{/if}}
       </div>
     </div>
 
-    <br><br>
+    <p class="tnr" style="font-size:24px;"><center><i>It is not what you do for your children,<br/>
+    but what you have taught them to do themselves<br/> that will make them successful human beings. <br/>
+    -Ann Landers</i></center></p>
+    <br>
 
   </div>
 </template>
