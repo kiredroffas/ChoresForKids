@@ -5,10 +5,18 @@
     {{#if canShow}}
       {{> UI.contentBlock }}
     {{else}}
+      <h1 style="font-size:42px;"><center>You have been logged out!</center></h1>
       <div style="padding-top: 40px" class="ui text container">
-        <p>You are not authorized to view this page.</p>
-        <p>Please login.</p>
-        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="ui two column grid">
+          <div class="column">
+            <img class="ui float image" src="/images/kidfalling.jpg" style="width:70%;">
+          </div>
+          <div class="column">
+            <p>If this was intentional, have a great day and thanks for using Chores For Kids!</p>
+            <p>If not however, you may want to try clicking the "Sign in" button at the top! </p>
+          </div>
+        </div>
+        <br><br>
       </div>
     {{/if}}
   {{/if}}
