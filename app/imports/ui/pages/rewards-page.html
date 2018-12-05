@@ -3,6 +3,39 @@
     <h1><center>Time to redeem some rewards!</center></h1><hr>
     <p><center>Now that you've completed your chores, why not download a coloring page?<br/>
                Click on the pictures to download!</center></p>
+    <div class="ui center aligned container">
+      <div>
+        <img class="image" src="/images/coin.png" style="width:3%;">
+        <script>
+          var coins = document.cookie;
+          document.getElementById('coins').innerHTML = " Total Coins: " + coins;
+        </script>
+        <p style="font-size:25px;"><span id="coins"></span></p>
+      </div>
+    </div>
+
+    <script>
+      var addUp = (function() {
+        return function () {
+          var element = document.getElementById("coins");
+          if (coins > 0){
+            if (element) {
+              element.innerHTML = --coins;
+              element.innerHTML = --coins;
+              element.innerHTML = --coins;
+              element.innerHTML = --coins;
+              element.innerHTML = --coins;
+            }
+          }
+          if(coins === 0) {
+            //window.alert("Your out of coins fool");
+          }
+        }
+      }());
+      // Attach as a listener
+      document.addEventListener("click", addUp);
+    </script>
+
     <div class="ui container">
       <div class="ui eight column grid">
         <div class="row">

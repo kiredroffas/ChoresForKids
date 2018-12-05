@@ -54,12 +54,12 @@
               var message = 'Your Coin total: ';
               coins = coins + 5;
               document.getElementById('coins').innerHTML = "Coins: " + coins;
-
+              document.cookie = coins;
             } else {
               var message = 'Your Coin total: ';
               coins = coins - 5;
               document.getElementById('coins').innerHTML = "Coins: " + coins;
-
+              document.cookie = coins;
             }
           }
         }, false);
