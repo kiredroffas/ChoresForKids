@@ -53,13 +53,11 @@
             if (ev.target.classList.toggle('checked')) {
               var message = 'Your Coin total: ';
               coins = coins + 5;
-              alert(message + coins);
               document.getElementById('coins').innerHTML = "Coins: " + coins;
 
             } else {
               var message = 'Your Coin total: ';
               coins = coins - 5;
-              alert(message + coins);
               document.getElementById('coins').innerHTML = "Coins: " + coins;
 
             }
