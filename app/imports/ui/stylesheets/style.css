@@ -124,3 +124,10 @@ ul li.checked::before {
 .addBtn:hover {
   background-color: #bbb;
 }
+
+#coins
+{
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}

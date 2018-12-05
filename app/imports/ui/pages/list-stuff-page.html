@@ -1,6 +1,10 @@
 <template name="List_Stuff_Page">
   {{#If_Logged_In}}
-    <h1><center>View, create, and edit your own Chore List below!</center></h1><br>
+    <h1><center>View, create, and edit your own Chore List below!</center></h1><hr><br>
+    <div class="ui center aligned container">
+      <img class="image" src="/images/coin.png" style="width:3%;">
+      <div id= "coins" style="font-size: 20px;"></div>
+    </div>
     <div class="ui text container">
 
       <div id="myDIV" class="header">
@@ -12,7 +16,7 @@
       </div>
 
       <ul id="myUL">
-        <li class="checked">Make a Chore List</li>
+        <li>Make a Chore List</li>
         <li>Clean room</li>
         <li>Take out trash</li>
         <li>Do laundry</li>
@@ -42,10 +46,23 @@
         }
 
         // Add a "checked" symbol when clicking on a list item
+        var coins = 0;
         var list = document.querySelector('ul');
         list.addEventListener('click', function(ev) {
           if (ev.target.tagName === 'LI') {
-            ev.target.classList.toggle('checked');
+            if (ev.target.classList.toggle('checked')) {
+              var message = 'Your Coin total: ';
+              coins = coins + 5;
+              alert(message + coins);
+              document.getElementById('coins').innerHTML = "Coins: " + coins;
+
+            } else {
+              var message = 'Your Coin total: ';
+              coins = coins - 5;
+              alert(message + coins);
+              document.getElementById('coins').innerHTML = "Coins: " + coins;
+
+            }
           }
         }, false);
 
