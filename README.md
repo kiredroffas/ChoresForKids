@@ -1,6 +1,8 @@
 Designed a web page-based application to motivate children to complete their chores. Implemented through Meteor (JavaScript,HTML,CSS) frameworks, the webpage provided the following functionalities: Parents and their children can create and modify a custom chore list, Children can individually check chores off of their created chore list when completed, Token rewards to be earned, based on the difficulty of the completed chore, token redemption available in the “store”.
 
+To install Meteor: cd app -> meteor npm install
 In IntelliJ IDEA: cd app -> meteor npm run start -> open localhost link
+To reset Mongo database: cd app -> meteor reset
 
 Main Page: Displays logo and login system, functionalities are hidden until user logs in. Then displays links to create a chore list and to redeem rewards. Redirects to chore list/rewards page when boxes are clicked.
 
